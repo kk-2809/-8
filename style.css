@@ -1,0 +1,117 @@
+@charset "utf-8";
+body{
+  position: relative;
+}
+.ear-1{
+  width: 20px;
+  height: 40px;
+  background-color: rgb(220, 241, 220);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 43%;
+  transform: rotate(315deg);
+  z-index: -10;
+}
+
+.ear-2{
+  width: 20px;
+  height: 40px;
+  background-color: rgb(220, 241, 220);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 43%;
+  transform: rotate(45deg);
+  z-index: -10;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.box-1{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.box-2{
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.parts{
+  width: 160px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 20px;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.hand-1{
+  width: 36px;
+  height: 80px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 40%;
+  transform: rotate(300deg);
+}
+.hand-2{
+  width: 36px;
+  height: 80px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  right: 40%;
+  transform: rotate(60deg);
+}
+
+.foot-1{
+  width: 36px;
+  height: 80px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  left: 43%;
+  transform: rotate(60deg);
+}
+.foot-2{
+  width: 36px;
+  height: 80px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  right: 43%;
+  transform: rotate(300deg);
+}
+
+
+@keyframes move{
+  25%{
+    padding-bottom: 20px;
+  }
+  50%{
+    padding-bottom: 0;
+  }
+  75%{
+    padding-bottom: 20px;
+  }
+  100%{
+    padding-bottom: 0;
+  }
+}
